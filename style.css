@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root{
+    --color01: #FF66C4;
+    --color02: #8ED650;
+    --color03: #1E60D1;
+    --color04: #273C73;
+    --color05: #FFD93B;
+}
+
+body{
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    max-height: 300vh;
+}
+
+header{
+    height: 150px;
+    background-image: linear-gradient(var(--color03) 0%, var(--color04) 50%, black 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+    min-width: 320px;
+}
+
+.titulo{
+    margin-top: 2.5%;
+}
+
+header > h1{
+    font-size: 2.5em;
+}
+  
+header > p{
+    margin-top: 15px;
+    text-align: center;
+    text-indent: 0px;
+    font-size: 1.4em;
+}
+  
+header img{
+    width: 82px;
+    height: 82px;
+    margin: 10px;
+    margin-top: 2%;
+}
+
+main{
+    margin: auto;
+    min-width: 320px;
+    max-width: 1000px;
+}
+
+main p{
+    margin: 0px 10px 10px 10px;
+    text-indent: 30px;
+    line-height: 1.7em;
+    padding: 0px 10px;
+}
+
+.verde, .branco{
+    padding: 10px;
+    height: 300px;
+}
+
+.verde:hover, .branco:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 0px 80px #00000034;
+}
+
+.verde{
+    background-color: var(--color02);
+    color: white;
+    text-align: left;
+}
+
+.branco{
+    background-color: white;
+    text-align: right;
+}
+
+.circv, .circr{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin: 10px;
+    background-color: var(--color01);
+}
+
+main h1{
+    margin-left: 10px;
+    line-height: 60px;
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.tit, .titr{
+    display: flex;
+}
+
+.titr{
+    justify-content: right;
+}
+
+p{
+    font-weight: normal;
+    overflow: auto;
+    max-height: 205px;
+}
+
+footer{
+    background-image: linear-gradient(to top,var(--color03) 0%, var(--color04) 50%, black 100%);
+    color: white;
+    width: 100%;
+    min-height: 40px;
+    max-height: 100px;
+    margin-top: 2%;
+    text-align: center;
+    line-height: 40px;
+}
+
+footer p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.verdei img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+}
+
+.imagens{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    min-width: 320px;
+    margin-top: 3%;
+    align-items: center;
+}
+
+.des:hover{
+    transform: scale(1.50);
+}
+
+.desg:hover{
+    cursor: pointer;
+}
+
+.desg:active{
+    transform: scale(0.95);
+}
+
+.name{
+    display: flex;
+    justify-content: space-evenly;
+    text-indent: 0px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.subtitle{
+    margin-top: 0;
+    text-align: center;
+    line-height: normal;
+}
+
+.cosmos{
+    line-height: normal;
+}
+
+@media screen and (min-width: 320px) {
+    header p, header h1, main h1{
+        font-size: 1em;
+    }
+
+    .verdei img{
+        width: 90px;
+        height: 90px;
+        align-items: center;
+    }
+
+    .verdei{
+        height: 320px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header p, header h1, main h1{
+        font-size: 1.5em;
+    }
+
+    .verdei img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: white;
+    border: 4px solid black;
+}
+
+p::-webkit-scrollbar{
+    width: 7px;
+    background-color: black;
+    border: 3px solid white;
+}
+
+.verde > p::-webkit-scrollbar{
+    background-color: white;
+    border: 3px solid var(--color02);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--color01);
+    border-radius: 10px;
+}
